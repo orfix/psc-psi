@@ -1,8 +1,8 @@
 psc-psi
 =======
 
-**PSC (Pascal Subset Compiler)**
-**PSI (Pascal Subset Interpreter)**
+###PSC (Pascal Subset Compiler)
+###PSI (Pascal Subset Interpreter)**
 
 ```
 USAGE : ./psc [OPTION]... [FICHIER]...
