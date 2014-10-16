@@ -1,9 +1,7 @@
 psc-psi
 =======
 
-###PSC (Pascal Subset Compiler)
-###PSI (Pascal Subset Interpreter)**
-
+#####PSC (Pascal Subset Compiler)
 ```
 USAGE : ./psc [OPTION]... [FICHIER]...
 
@@ -13,8 +11,11 @@ USAGE : ./psc [OPTION]... [FICHIER]...
     -l : Lister le pseudo-code genere
 
     *Pascal Subset Compiler PSC version 0.1 - (C) MO 2009*
+```
 
 
+#####PSI (Pascal Subset Interpreter)
+```
 USAGE : ./psi [OPTION]... [FICHIER]...
 
      -h : Afficher cette aide
