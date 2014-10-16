@@ -1,0 +1,28 @@
+#include  "ts.h"
+#include  "al.h"
+#include  "psc.h"
+#include  <stdio.h>
+#include  <stdlib.h>
+
+int main( void )
+{
+	Psc prog;
+
+	if( psc_init(&prog, "source.pas") ) {
+		while(prog.sym.cl!=CL_FIN && prog.sym.cl!=CL_ERREUR) {
+			al_dbg_sym(&prog);
+			al_symSuivant(&prog);
+		}
+		if( prog.sym.cl==CL_ERREUR ) {
+			err_aficher(&prog);
+		}
+		puts("---------------------------------");
+		ts_debug(&prog.ts);
+		psc_quit(&prog);
+	} else {
+		puts("Erreur : ouverture du fichier");
+	}
+
+	return 0;
+}
+
